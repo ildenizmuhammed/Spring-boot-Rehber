@@ -20,7 +20,9 @@ public class KisiService {
 
     public List<Kisi> getKisiler(String unvan){
         if (unvan == null) {
+
             System.out.println("Ünvan bulunamadı, Tüm ünvanlar listelendi.");
+
             return kisiRepository.findAll();
                     }
         else{
@@ -42,7 +44,7 @@ public class KisiService {
 
     public Kisi getKisiByDahiliNo(String dahiliNo) {
         return kisiRepository.findById(dahiliNo)
-                .orElseThrow(() -> new RuntimeException(" dahili numaralı kişi bulunamdı!"));
+                .orElseThrow(() -> new RuntimeException(" dahili numaralı kişi bulunamdı!!!!"));
     }
 
     public void updateKisi(String dahiliNo, Kisi newKisi) {
