@@ -20,7 +20,9 @@ public class KisiService {
 
     public List<Kisi> getKisiler(String unvan){
         if (unvan == null) {
-            System.out.println("Ünvan bulunamadı,Tüm ünvanlar listelendi.!!");
+
+            System.out.println("Ünvan bulunamadı, Tüm ünvanlar listelendi.");
+
             return kisiRepository.findAll();
                     }
         else{
